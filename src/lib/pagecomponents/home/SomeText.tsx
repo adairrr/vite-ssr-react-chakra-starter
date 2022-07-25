@@ -1,6 +1,8 @@
 import { Grid, Heading, Text } from "@chakra-ui/react";
+import type { FC } from "react";
+import React from "react";
 
-const SomeText = () => {
+const SomeText: FC = () => {
   return (
     <Grid textAlign="center" gap={2}>
       <Heading fontSize="2xl" fontWeight="extrabold">

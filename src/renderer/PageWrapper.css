@@ -1,0 +1,9 @@
+/* This CSS is common to all pages */
+
+* {
+  box-sizing: border-box;
+}
+
+#page-content.page-transition {
+  opacity: 0;
+}

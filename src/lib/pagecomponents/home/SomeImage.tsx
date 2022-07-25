@@ -1,8 +1,10 @@
 import { Flex, Image } from "@chakra-ui/react";
+import type { FC } from "react";
+import React from "react";
 
 const ICON_SIZE = 22;
 
-const SomeImage = () => {
+const SomeImage: FC = () => {
   return (
     <Flex marginY={4} justifyContent="center" alignItems="center" gridGap={2}>
       <Image

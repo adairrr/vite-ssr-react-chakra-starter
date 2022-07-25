@@ -1,7 +1,9 @@
 import { Box, Button, Flex, Image, Link } from "@chakra-ui/react";
+import type { FC } from "react";
+import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 
-const CTASection = () => (
+const CTASection: FC = () => (
   <Box textAlign="center">
     <Link
       _hover={undefined}

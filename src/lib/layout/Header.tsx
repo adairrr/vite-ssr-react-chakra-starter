@@ -1,4 +1,7 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import React from "react";
+
+import Link from "../../renderer/Link";
 
 import ThemeToggle from "./ThemeToggle";
 
@@ -12,9 +15,19 @@ const Header = () => {
       justifyContent="center"
       gridGap={2}
     >
-      <Box marginLeft="auto">
+      <Flex
+        w="50%"
+        h="full"
+        px="6"
+        maxW="700px"
+        align="center"
+        justify="space-between"
+      >
+        <Link href="/">Welcome</Link>
+        <Link href="/star-wars">Data Fetching</Link>
+        <Link href="/hello/alice">Routing</Link>
         <ThemeToggle />
-      </Box>
+      </Flex>
     </Flex>
   );
 };
